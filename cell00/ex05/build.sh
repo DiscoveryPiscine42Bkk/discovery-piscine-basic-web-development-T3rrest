@@ -2,5 +2,8 @@ if [ -z "$1" ]
   then
     echo "No argument supplied"
 else
-	mkdir ex$1 
+  for i in $*
+  do
+	  mkdir ex$i
+  done
 fi

@@ -5,7 +5,56 @@
 </head>
 <body>
 
-first num<input type="text">
+First Num<input type="text" id="num1">
+Operation<select id="opper">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+    <option value="%">%</option>
+</select>
+Second Num<input type="text" id="num2">
+<button onclick="calc()">Try me!</button>
+
+<script>
+    setInterval(()=>{alert("Please, use me...")},30000)
+    function operate(operator,v1,v2){
+        v1 = Number(v1)
+        v2 = Number(v2)
+        if (operator == "+"){
+            return v1 + v2
+        } else if (operator == "-"){
+            return v1 - v2
+        } else if (operator == "*"){
+            return v1 * v2
+        } else if (operator == "/"){
+            if (v2==0){
+                return "It's over 9000!"
+            }else{
+                return v1/v2
+            }
+        } else{
+            if (v2==0){
+                return "It's over 9000!"
+            }else{
+                return v1%v2
+            }
+        }
+    }
+    function calc(){
+        var val1 = document.getElementById("num1").value
+        var val2 = document.getElementById("num2").value
+        if (!isNaN(val1)&&!isNaN(val2)&&val1>=0&&val2>=0){
+            alert(operate(document.getElementById("opper").value,val1,val2))
+            console.log(operate(document.getElementById("opper").value,val1,val2))
+        } else {
+            alert("Error :(")
+            console.log("Error :(")
+        }
+    } 
+</script>
+
+
 
 </body>
 </html>

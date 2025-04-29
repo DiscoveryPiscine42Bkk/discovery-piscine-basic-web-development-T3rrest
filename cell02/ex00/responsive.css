@@ -1,0 +1,19 @@
+
+table, td {
+  border:solid black;
+  border-collapse: collapse;
+
+}
+
+table {
+    width: 100%;
+    height: calc(100vh - 20px);
+}
+
+td.left{
+    background-color: green;
+}
+
+td.right{
+    background-color: aqua;
+}

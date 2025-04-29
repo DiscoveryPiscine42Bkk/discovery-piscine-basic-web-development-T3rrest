@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+#balloon{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border-radius: 100%;
+}
+</style>
+
+<body>
+
+<div id="balloon" onclick="clickevent()" onmouseleave="mouseleave()">
+
+</div>
+
+
+<script>
+function changecolor(){
+    var ball_color = document.getElementById("balloon").style.backgroundColor;
+    if (ball_color == "red"){
+        document.getElementById("balloon").style.backgroundColor = "green";
+    } else if (ball_color === "green"){
+        document.getElementById("balloon").style.backgroundColor = "blue";
+    } else {
+        document.getElementById("balloon").style.backgroundColor = "red";
+    }
+}
+
+function changesize(){
+    var ball_size = document.getElementById("balloon");
+    if (ball_size.offsetHeight == 420) {
+        document.getElementById("balloon").style.height = 200 + 'px';
+        document.getElementById("balloon").style.width = 200 + 'px';
+    }
+    else {
+        document.getElementById("balloon").style.height = ball_size.offsetHeight + 10 + 'px';
+        document.getElementById("balloon").style.width = ball_size.offsetWidth + 10 + 'px';        
+    }
+}
+
+function changecolor_leave(){
+    var ball_color = document.getElementById("balloon").style.backgroundColor;
+    if (ball_color == "red"){
+        document.getElementById("balloon").style.backgroundColor = "blue";
+    } else if (ball_color === "green"){
+        document.getElementById("balloon").style.backgroundColor = "red";
+    } else {
+        document.getElementById("balloon").style.backgroundColor = "green";
+    }
+}
+
+function changesize_leave(){
+    var ball_size = document.getElementById("balloon");
+    if (ball_size.offsetHeight != 200) {
+        document.getElementById("balloon").style.height = ball_size.offsetHeight - 5 + 'px';
+        document.getElementById("balloon").style.width = ball_size.offsetWidth - 5 + 'px';
+    }
+}
+
+
+function mouseleave(){
+    changecolor_leave()
+    changesize_leave()
+}
+
+function clickevent(){
+    changecolor()
+    changesize()
+}
+</script>
+
+</body>
+</html> 

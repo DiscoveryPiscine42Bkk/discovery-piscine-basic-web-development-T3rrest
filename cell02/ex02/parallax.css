@@ -1,0 +1,36 @@
+body{
+    height: 100vh;
+    margin: 0;
+    perspective: 1px;
+}
+
+.section1,.section2, .section3{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+
+.section1 {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Atlantic_near_Faroe_Islands.jpg/1200px-Atlantic_near_Faroe_Islands.jpg);
+}
+
+.section2 {
+    background: rgb(0, 0, 0);
+    min-height: 50vh;
+}
+
+.section3 {
+    background-image: url(https://media.cnn.com/api/v1/images/stellar/prod/180219103122-zanzibar-and-its-islands-mnemba-a-view-from-the-sky-mnemba-island-lodge.jpg?q=w_1600,h_900,x_0,y_0,c_fill);
+
+}
+
+.text{
+    top: 40%;
+    left: 50%;
+    position: absolute;
+    font-size: 5vw;
+    transform: translate(-50%,0);
+    color: white;
+}

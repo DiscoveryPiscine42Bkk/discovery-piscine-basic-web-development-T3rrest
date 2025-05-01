@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="backgroound.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+
+<button>Click Me!</button>
+
+
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("body").css("background-color",'#'+(0x1000000+Math.random()*0xffffff).toString(16).substr(1,6))
+    });
+});
+
+</script>
+
+</body>
+</html> 

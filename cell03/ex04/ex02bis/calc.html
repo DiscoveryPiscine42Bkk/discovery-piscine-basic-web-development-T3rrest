@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+First Num<input type="text" id="num1">
+Operation<select id="opper">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+    <option value="%">%</option>
+</select>
+Second Num<input type="text" id="num2">
+<button>Try me!</button>
+
+<script>
+
+$(document).ready(function(){
+    $("button").click(function(){
+        calc()
+    });
+});
+
+    setInterval(()=>{alert("Please, use me...")},30000)
+    function operate(operator,v1,v2){
+        if (operator == "+"){
+            return v1 + v2
+        } else if (operator == "-"){
+            return v1 - v2
+        } else if (operator == "*"){
+            return v1 * v2
+        } else if (operator == "/"){
+            if (v2==0){
+                return "It's over 9000!"
+            }else{
+                return v1/v2
+            }
+        } else{
+            if (v2==0){
+                return "It's over 9000!"
+            }else{
+                return v1%v2
+            }
+        }
+    }
+    function calc(){
+        var val1 = $("#num1").val()
+        var val2 = $("#num2").val()
+        if (!isNaN(val1)&&!isNaN(val2)&&val1>=0&&val2>=0){
+            alert(operate($("#opper").val(),Number(val1),Number(val2)))
+            console.log(operate($("#opper").val(),Number(val1),Number(val2)))
+        } else {
+            alert("Error :(")
+            console.log("Error :(")
+        }
+    } 
+</script>
+
+
+
+</body>
+</html>
+
+

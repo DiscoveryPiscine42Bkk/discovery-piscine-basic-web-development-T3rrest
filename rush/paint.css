@@ -1,0 +1,19 @@
+body {
+    margin: 0%;
+    width: 100vw;
+    height: 100vh;
+    background-color: lightskyblue;
+}
+
+.profile {
+    height: 900px;
+    width: 600px;
+    background-color: rgb(105, 191, 244);
+    border-radius: 30px;
+}
+
+
+
+.header{
+    text-align: center;
+}

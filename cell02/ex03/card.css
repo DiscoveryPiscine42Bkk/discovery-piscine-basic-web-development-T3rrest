@@ -1,0 +1,96 @@
+
+
+h1 {text-align: center;
+    font-size: 36px;
+    color: black;
+}
+
+table, th, td, tr {
+    border: 2px transparent;
+    color: wheat;
+    border-collapse: collapse;
+    justify-content: center;
+    width: 300px;
+    background-color: grey;
+}
+
+th{
+    margin-top: 200px;
+}
+
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.frame_main{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.frame_sub{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.img_pfp{
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+}
+
+img{
+    width: 72px;
+    height: 72px;
+    border-radius: 0.5rem;
+
+}
+
+p{
+    font-family: Helvetica;
+    font-size: 14px;
+    color: rgb(237, 167, 255);
+}
+.name{
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+}
+
+    
+
+.button{
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 100%;
+   
+}
+.button:hover {background-color: green;}
+
+hr{
+    height:2px;
+    border-width:100%;
+    color:white;
+    background-color:white;
+}
+
+body{
+    background-color: rgb(200, 200, 200);
+}

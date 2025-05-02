@@ -1,0 +1,40 @@
+body {
+    margin: 0%;
+    width: 100vw;
+    height: 100vh;
+    background-color: lightskyblue;
+}
+
+.profile {
+    height: 900px;
+    width: 600px;
+    background-color: rgb(105, 191, 244);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 3px 3px 1px 1px rgb(89, 169, 219);
+}
+
+.pfp_background {
+    background-color: lightskyblue;
+    width: 20vw;height: 40vh;
+    display: flex; 
+    margin-top: 2vh;
+    border-radius: 20px;
+}
+
+.textbox{
+    transform: translate(0%,15%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: lightskyblue;
+    width: 20vw;
+    height: 20vh;
+    border-radius: 30px;
+}
+
+.header{
+    text-align: center;
+}

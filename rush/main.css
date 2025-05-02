@@ -38,3 +38,17 @@ body {
 .header{
     text-align: center;
 }
+
+.titlebox{
+    width: 40vw;
+    height: 15vh;
+    background-color: rgb(105, 191, 244);
+    justify-content: center;
+    display: flex; 
+    margin-left: auto; 
+    margin-right:auto ;
+    align-items: center;
+    border-radius: 30px;
+    transform: translate(0%,10%);
+    box-shadow: 3px 3px 1px 1px rgb(89, 169, 219);
+}
